@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise CI/CD Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #999;
+        }
+        .status {
+            padding: 10px;
+            background-color: #e8f5e9;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .status h2 {
+            margin-top: 0;
+            color: #2e7d32;
+        }
+        .timestamp {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Enterprise CI/CD Pipeline Demo</h1>
+        <p>This static website is deployed using a complete CI/CD pipeline with Jenkins, Helm, FluxCD, and Terraform on Azure Kubernetes Service.</p>
+        
+        <div class="status">
+            <h2>Deployment Status</h2>
+            <p>Version: <span id="version">1.0.0</span></p>
+            <p>Deployment timestamp: <span id="timestamp" class="timestamp"></span></p>
+            <p>Environment: <span id="environment">Production</span></p>
+        </div>
+        
+        <p>This demo showcases:</p>
+        <ul>
+            <li>Infrastructure as Code with Terraform</li>
+            <li>CI Pipeline with Jenkins</li>
+            <li>GitOps with FluxCD</li>
+            <li>Helm for application packaging</li>
+            <li>Monitoring with Prometheus and Grafana</li>
+            <li>Database integration</li>
+            <li>Code quality with SonarQube</li>
+        </ul>
+    </div>
+    <div class="footer">
+        &copy; 2025 Enterprise CI/CD Demo
+    </div>
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString();
+    </script>
+</body>
+</html>
