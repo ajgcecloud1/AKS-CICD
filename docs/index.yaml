@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  static-website:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-03-24T15:49:06.9358134-04:00"
+    description: A Helm chart for Kubernetes
+    digest: f6e6810b1feeb81f4c838d4739145b9fa6548d51b4c2c2179b7361a125b1c069
+    name: static-website
+    type: application
+    urls:
+    - static-website-0.1.0.tgz
+    version: 0.1.0
+generated: "2025-03-24T15:49:06.9348122-04:00"
